@@ -19,6 +19,7 @@
 namespace Redbox\Nit\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Redbox\Nit\Routes;
 
 /**
  * Class TrackerServiceProvider
@@ -39,7 +40,7 @@ class NitServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-      $this->app->alias(Tracker::class, 'redbox-tracker-tracker');
+      $this->app->alias(Routes::class, 'redbox-tracker-tracker');
     }
 
     /**

@@ -1,0 +1,30 @@
+{
+    "name": "redbox/nit",
+    "description": "Auto generate your laravel tests",
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johnny Mast",
+            "email": "mastjohnny@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "Redbox\\Nit\\": "src/"
+        }
+      },
+    "require": {},
+    "extra": {
+        "laravel": {
+          "providers": [
+            "Redbox\\Nit\\Providers\\TrackerServiceProvider"
+          ],
+          "aliases": {
+            "Tracker": "Redbox\\Tracker\\Facades\\Tracker"
+          }
+        }
+      }
+}

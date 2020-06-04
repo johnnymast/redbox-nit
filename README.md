@@ -1,2 +1,2 @@
 # redbox-nit
-Auto generate your laravel tests
+Work in progress.
